@@ -18,10 +18,10 @@ class UserCreateSchema(BaseModel):
     class Config:
         json_schema_extra = {
             "example": {
-                "username": "johndoe",
-                "email": "john@example.com",
+                "username": "username",
+                "email": "user@example.com",
                 "password": "SecurePass123!",
-                "full_name": "John Doe",
+                "full_name": "user name",
                 "mobile": "1234567890",
                 "is_active": True
             }
@@ -63,9 +63,9 @@ class UserApiResponse(BaseModel):
                 "message": "User fetched successfully",
                 "data": {
                     "id": "507f1f77bcf86cd799439011",
-                    "username": "johndoe",
-                    "email": "john@example.com",
-                    "full_name": "John Doe",
+                    "username": "username",
+                    "email": "user@example.com",
+                    "full_name": "user name",
                     "is_active": True,
                     "mobile": "1234567890",
                     "created_at": "2024-01-01T00:00:00",
@@ -84,7 +84,7 @@ class UserUpdateSchema(BaseModel):
     class Config:
         json_schema_extra = {
             "example": {
-                "full_name": "John Updated",
+                "full_name": "user Updated",
                 "mobile": "9876543210",
                 "is_active": True
             }
